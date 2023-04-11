@@ -27,13 +27,13 @@ Mean IoU: 0.762100
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/7_overlay.png)  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/7_pred.png)  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/7_target.png)  
-5. 运行`predict.py`脚本：`python predict.py --model deeplabv3plus_resnet101 --gpu_id 0 --crop_size 768 --output_stride 16 --ckpt ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar --save_val_results_to ./result/ --dataset cityscapes --input /home/xilm/Cityscapes/leftImg8bit/test/berlin/berlin_000000_000019_leftImg8bit.png`  
+5. 运行`predict.py`脚本：`python predict.py --model deeplabv3plus_resnet101 --gpu_id 0 --crop_size 768 --output_stride 16 --ckpt ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar --save_val_results_to ./result/ --dataset cityscapes --input /home/xilm/Cityscapes/leftImg8bit/test/berlin/berlin_000001_000019_leftImg8bit.png`  
 ```
-(base) xilm@xilm-MS-7D17:~/fuxian/deeplabv3plus/DeepLabV3Plus-Pytorch-master$ python predict.py --model deeplabv3plus_resnet101 --gpu_id 0 --crop_size 768 --output_stride 16 --ckpt ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar --save_val_results_to ./result/ --dataset cityscapes --input /home/xilm/Cityscapes/leftImg8bit/test/berlin/berlin_000000_000019_leftImg8bit.png
+(base) xilm@xilm-MS-7D17:~/fuxian/deeplabv3plus/DeepLabV3Plus-Pytorch-master$ python predict.py --model deeplabv3plus_resnet101 --gpu_id 0 --crop_size 768 --output_stride 16 --ckpt ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar --save_val_results_to ./result/ --dataset cityscapes --input /home/xilm/Cityscapes/leftImg8bit/test/berlin/berlin_000001_000019_leftImg8bit.png
 Device: cuda
 Resume model from ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar
 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.12it/s]
 ```  
 运行结束后获得了分割结果。  
-![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000000_000019_leftImg8bit.png)  
-![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000000_000019_leftImg8bit_predict.png)  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit.png)  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit_predict.png)  
