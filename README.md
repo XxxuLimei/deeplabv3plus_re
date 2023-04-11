@@ -38,3 +38,10 @@ Resume model from ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit.png)  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit_predict.png)  
 6. 接下来准备将Cityscapes的图片通过ROS的方式发布出去。  
+- 从[Cityscapes官网](https://www.cityscapes-dataset.com/downloads/)上下载下面的数据集，它包含了三个完整的视频；  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/WeChat%20Image_20230411200612.png)  
+- 编写img_pub.py脚本，对数据集中的图像进行发布，该脚本我放到了`pub`文件夹下；  
+- 编写好之后，右键该文件，勾选`Allow executing file as program`，使该文件可以通过rosrun进行运行；  
+- 运行`source devel/setup.bash`，然后运行RViz;  
+- 接着再次运行`source devel/setup.bash`，输入`rosrun img_seg img_pub.py`后，就可以在RViz上进行订阅，然后显示视频了。  
+![]()  
