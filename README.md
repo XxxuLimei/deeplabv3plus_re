@@ -35,5 +35,5 @@ Resume model from ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar
 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.12it/s]
 ```  
 运行结束后获得了分割结果。  
-![]()  
-![]()  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000000_000019_leftImg8bit.png)  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000000_000019_leftImg8bit_predict.png)  
