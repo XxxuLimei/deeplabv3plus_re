@@ -37,3 +37,4 @@ Resume model from ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar
 运行结束后获得了分割结果。  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit.png)  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/berlin_000001_000019_leftImg8bit_predict.png)  
+6. 接下来准备将Cityscapes的图片通过ROS的方式发布出去。  
