@@ -45,5 +45,9 @@ Resume model from ./result/best_deeplabv3plus_resnet101_cityscapes_os16.pth.tar
 - 运行`source devel/setup.bash`，然后运行RViz;  
 - 接着再次运行`source devel/setup.bash`，输入`rosrun img_seg img_pub.py`后，就可以在RViz上进行订阅，然后显示视频了。  
 ![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/Screenshot%20from%202023-04-11%2020-02-54.png)  
-- 对发布的图像数据进行订阅，用于语义分割，并将语义分割的结果发布出来，在RViz上进行显示。  
-
+7. 对发布的图像数据进行订阅，用于语义分割，并将语义分割的结果发布出来，在RViz上进行显示。  
+- 复现成功，结果如下：  
+![](https://github.com/XxxuLimei/deeplabv3plus_re/blob/main/pictures/Screenshot%20from%202023-04-11%2020-21-10.png)  
+可以看出，具有一定的延迟，没有办法做到实时。  
+------------------------------------------------------------  
+这个库的功能就到这里啦，接下来继续openpcdet-ros。  
